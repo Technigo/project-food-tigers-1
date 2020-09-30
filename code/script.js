@@ -2,11 +2,11 @@ const API = "967cabdca4d45ad5a19691662be081c0"
 const city = 61 // London
 const cuisine = 60 // Japanese
 
-
 const apiURL = `https://developers.zomato.com/api/v2.1/search?entity_id=${city}&entity_type=city&cuisines=${cuisine}`
 
 const restaurants = []
 const main = document.querySelector('main')
+
 
 fetch(apiURL, { headers: { "user-key": API } })
     .then((response) => {
@@ -41,7 +41,6 @@ fetch(apiURL, { headers: { "user-key": API } })
         })
         console.log(restaurants)
 
-
         json.restaurants.forEach((resto) => {
             console.log(resto.restaurant)
             const name = resto.restaurant.name
@@ -53,3 +52,4 @@ fetch(apiURL, { headers: { "user-key": API } })
 
         })
     })
+
