@@ -1,5 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/header.jpg);
+  width: fit-content;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #da5050;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 3px;
+  border: 3px solid #da5050af;
+}
+
+.dishes-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* margin: 10px 0; */
+}
+
+.price,
+.rating {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 14px;
+  font-style: italic;
+  width: 90%;
+  margin: 6px 0 50px;
+}
+.price,
+.rating,
+.location,
+.name,
+h2 {
+  padding-left: 8px;
+}
+
+.restaurant-info {
+  display: flex;
+  justify-content: space-between;
+}
+#dollar {
+  height: 15px;
+  width: 30px;
+  align-items: left;
+  object-fit: contain;
+}
+
+.star {
+  height: 15px;
+  width: 30px;
+  align-items: left;
+  object-fit: contain;
 }
